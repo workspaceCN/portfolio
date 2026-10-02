@@ -72,7 +72,7 @@ a{color:inherit}
 .person{position:absolute;z-index:4;left:50%;top:12%;height:122%;width:auto;transform:translateX(-46%);pointer-events:none}
 .person img{display:block;height:100%;width:auto;filter:drop-shadow(0 30px 50px rgba(0,0,0,.4))}
 .person video{display:none;height:100%;width:auto}
-.stage.has-video .person{mix-blend-mode:multiply}
+.stage.has-video .person{mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 9%,#000 91%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 5%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 9%,#000 91%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 5%);mask-composite:intersect}
 .stage.has-video .person img{display:none}
 .stage.has-video .person video{display:block}
 
